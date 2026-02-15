@@ -17,12 +17,8 @@ public:
         
 
         int sum = carry;
-        if(l1){
-            sum += l1->val;
-        }
-        if(l2){
-            sum += l2->val;
-        }
+        if (l1) sum += l1->val;
+        if (l2) sum += l2->val;
 
         ListNode* head = new ListNode(sum%10);
         head->next = solve
