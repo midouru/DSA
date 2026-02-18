@@ -19,12 +19,6 @@ public:
                 break;
             }
         }
-        int i = piv+1;
-        int j = n-1;
-        while(i<=j){
-            swap(nums[i],nums[j]);
-            i++;
-            j--;
-        }
+        reverse(nums.begin()+piv+1, nums.end());
     }
 };
